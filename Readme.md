@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/MasterDetailAtRuntime/Form1.cs) (VB: [Form1.vb](./VB/MasterDetailAtRuntime/Form1.vb))
+* [Program.cs](./CS/MasterDetailAtRuntime/Program.cs) (VB: [Program.vb](./VB/MasterDetailAtRuntime/Program.vb))
+<!-- default file list end -->
 # How to dynamically generate a master-detail report in a WinForms application
 
 
