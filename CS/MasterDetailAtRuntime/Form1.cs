@@ -97,7 +97,7 @@ namespace MasterDetailAtRuntime
             
             int colCount = templateTable.Columns.Count;
             XtraReport rootReport = report.RootReport;
-            int pageWidth = (rootReport.PageWidth - (rootReport.Margins.Left + rootReport.Margins.Right));
+            float pageWidth = (rootReport.PageWidth - (rootReport.Margins.Left + rootReport.Margins.Right));
             float colWidth = pageWidth / colCount;
             //Creating an XRTableCell for each column in the corresponding DataTable
             for (int i = 0; i < colCount; i++)
@@ -188,7 +188,7 @@ namespace MasterDetailAtRuntime
             subreport.BeforePrint += subreport_BeforePrint;
         }
 
-        void subreport_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        void subreport_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
         {
             XRSubreport subreport = sender as XRSubreport;
             XtraReport mainReport = subreport.Report as XtraReport;

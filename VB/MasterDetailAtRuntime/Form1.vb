@@ -89,7 +89,7 @@ Namespace MasterDetailAtRuntime
 
 			Dim colCount As Integer = templateTable.Columns.Count
 			Dim rootReport As XtraReport = report.RootReport
-			Dim pageWidth As Integer = (rootReport.PageWidth - (rootReport.Margins.Left + rootReport.Margins.Right))
+			Dim pageWidth As Single = (rootReport.PageWidth - (rootReport.Margins.Left + rootReport.Margins.Right))
 			Dim colWidth As Single = pageWidth \ colCount
 			'Creating an XRTableCell for each column in the corresponding DataTable
 			For i As Integer = 0 To colCount - 1
@@ -177,7 +177,7 @@ Namespace MasterDetailAtRuntime
 			AddHandler subreport.BeforePrint, AddressOf subreport_BeforePrint
 		End Sub
 
-		Private Sub subreport_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs)
+		Private Sub subreport_BeforePrint(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs)
 			Dim subreport As XRSubreport = TryCast(sender, XRSubreport)
 			Dim mainReport As XtraReport = TryCast(subreport.Report, XtraReport)
 
