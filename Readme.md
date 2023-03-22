@@ -3,21 +3,40 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4421)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# Reporting for WinForms - Master-Detail Report Created in Code (obsolete)
+
+This example shows how to create a master-detail report in code. 
+
+> **Note**
+> This example uses the ADO.NET library with a Microsoft Access database and [legacy Data Bindings](https://docs.devexpress.com/XtraReports/401991/detailed-guide-to-devexpress-reporting/use-report-controls/bind-report-controls-to-data/migrate-from-legacy-data-bindings-to-expressions).
+
+The following steps are essential to create a report layout:
+1. Create a report instance and bind it to data.
+2. Add report bands to the report.
+3. Add report controls to the created bands and create data bindings.
+
+After the report layout is complete, generate the report document and display it in the **Print Preview** dialog window.
+
+![Master-Detail Report Created in Code](Images/screenshot.png)
+
+## Files to Look At
 
 * **[Form1.cs](./CS/MasterDetailAtRuntime/Form1.cs) (VB: [Form1.vb](./VB/MasterDetailAtRuntime/Form1.vb))**
-<!-- default file list end -->
-# How to dynamically generate a master-detail report in a WinForms application
+
+## Documentation
+
+- [Create a Report in Visual Studio](https://docs.devexpress.com/XtraReports/14989/get-started-with-devexpress-reporting/create-a-report-in-visual-studio)
+- [Introduction to Banded Reports](https://docs.devexpress.com/XtraReports/2587/detailed-guide-to-devexpress-reporting/introduction-to-banded-reports)
+- [Use Report Controls](https://docs.devexpress.com/XtraReports/2605/detailed-guide-to-devexpress-reporting/use-report-controls)
+- [Bind Reports to Data](https://docs.devexpress.com/XtraReports/15034/detailed-guide-to-devexpress-reporting/bind-reports-to-data)
+- [WinForms Reporting Print Preview](https://docs.devexpress.com/XtraReports/10707/winforms-reporting/winforms-reporting-print-preview)
+- [Create Reports](https://docs.devexpress.com/XtraReports/5152/create-reports)
 
 
-<p>This example illustrates how to create a <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument1466">master-detail report</a> in code.<br><br>The following steps are essential to create a report layout:</p>
-<p>1. Create a report instance and <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument15034">bind it to data</a>.</p>
-<p>2. Add required <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument2590">bands</a> to the report.</p>
-<p>3. Add required <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument2605">controls</a> to the created bands and provide data to them.</p>
-<p>After the report layout is complete, you can generate the report document and display it in a <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument10707">Print Preview</a>.</p>
-<p><strong><br>See also</strong>:<strong><br></strong>- <a href="https://www.devexpress.com/Support/Center/p/E4657">How to dynamically generate a report and bind it to a DataSet in a WinForms application</a><br>- <a href="https://www.devexpress.com/Support/Center/p/E652">How to dynamically generate a report and bind it to a collection of objects in a WinForms application</a><br>- <a href="https://www.devexpress.com/Support/Center/p/AK15900">How to create a report dynamically</a></p>
+## More Examples
 
-<br/>
-
-
+- [Reporting for WinForms - How to Create a Report Bound to the SQL Data Source](https://github.com/DevExpress-Examples/reporting-winforms-sql-data-source-runtime)
+- [Reporting for WinForms - Create a Report Dynamically and Bind It to a DataSet](https://github.com/DevExpress-Examples/reporting-winforms-create-report-dynamically-and-bind-it-to-dataset) 
+- [How to dynamically generate a report and bind it to a collection of objects](https://github.com/DevExpress-Examples/Reporting_how-to-dynamically-generate-a-report-and-bind-it-to-a-collection-of-objects-e652)
+- [How to bind a report to a federated data source](https://github.com/DevExpress-Examples/Reporting-Bind-Report-To-Federated-Data-Source)
